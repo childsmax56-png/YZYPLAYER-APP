@@ -86,7 +86,7 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Install NDK
-        run: sdkmanager --install "ndk;27.0.12077973"
+        run: yes | sdkmanager --install "ndk;27.0.12077973"
 
       - name: Install npm dependencies
         run: npm install
