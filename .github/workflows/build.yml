@@ -91,16 +91,13 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
-      - name: Install Tauri CLI
-        run: npm install -g @tauri-apps/cli
-
       - name: Init Android project
-        run: tauri android init
+        run: npm run tauri -- android init
         env:
           NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.12077973
 
       - name: Build APK
-        run: tauri android build --apk
+        run: npm run tauri -- android build --apk
         env:
           NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.12077973
 
