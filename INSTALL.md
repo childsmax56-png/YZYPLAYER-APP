@@ -1,8 +1,10 @@
 # Installing YZYPlayer App
 
-## macOS (available now)
+All installers are hosted in the **Downloads** section of the YZYPlayer site itself — no GitHub account needed.
 
-1. **Download** `yzyplayer-app_0.1.0_aarch64.dmg`.
+## macOS
+
+1. **Download** `yzyplayer-app_0.1.0_aarch64.dmg` from the site's Downloads section.
 2. **Double-click** the `.dmg` file — a window opens showing the app icon and an arrow to the Applications folder.
 3. **Drag** the `yzyplayer-app` icon into **Applications**.
 4. **Eject** the mounted disk image in Finder's sidebar — the `.dmg` isn't needed after this.
@@ -15,22 +17,19 @@ macOS will likely block the app the first time since it isn't signed with an App
 
 > Note: this `.dmg` is built for Apple Silicon (M1/M2/M3/M4) Macs. Intel Macs would need a separate build.
 
-## Windows (not yet built)
+## Windows
 
-A `.msi` or `.exe` installer hasn't been produced yet — building one requires either a Windows machine or a CI pipeline (Tauri can't cross-compile a Windows installer from macOS). Once built, the steps would be:
-
-1. Download the `.msi` (or `.exe`) installer.
+1. **Download** the `.msi` (or `.exe`) installer from the site's Downloads section.
 2. Double-click it and follow the install wizard.
-3. Windows may show a SmartScreen warning since the app isn't code-signed — click **More info** → **Run anyway**.
+3. Windows will likely show a SmartScreen warning since the app isn't code-signed — click **More info** → **Run anyway**.
 4. Launch from the Start menu.
 
-## Linux (not yet built)
+## Linux
 
-Not yet built either — would produce a `.deb`, `.rpm`, or `.AppImage` depending on distro. Once built:
-
-- **`.AppImage`**: make it executable (`chmod +x yzyplayer-app.AppImage`) and double-click or run it — no install needed.
-- **`.deb`** (Debian/Ubuntu): `sudo dpkg -i yzyplayer-app.deb`
-- **`.rpm`** (Fedora): `sudo rpm -i yzyplayer-app.rpm`
+1. **Download** the file from the site's Downloads section — depending on what's offered:
+   - **`.AppImage`**: `chmod +x yzyplayer-app*.AppImage` then double-click or run it — no install needed.
+   - **`.deb`** (Debian/Ubuntu): `sudo dpkg -i yzyplayer-app*.deb`
+   - **`.rpm`** (Fedora): `sudo rpm -i yzyplayer-app*.rpm`
 
 ## Using the app (all platforms)
 
